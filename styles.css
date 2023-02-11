@@ -1,0 +1,356 @@
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway/static/Raleway-Regular.ttf);
+}
+
+/*  */
+/* index.html */
+/*  */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    color: #111;
+    background-color: #eeeeee;
+}
+
+
+/*  */
+/* CLASS MENU */
+/*  */
+
+
+.menu {
+    box-sizing: border-box;
+    position: fixed;
+    background: rgb(192, 192, 192, 0.6);
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    left: -430px;
+    transition: all 0.1s ease;
+}
+
+.menu-active {
+    left: 0;
+}
+
+.menu-section-button {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin-left: 355px;
+}
+.menu-button {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: #FFFAFA;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    padding: 0 10px;
+    opacity: 0%;
+    transition: all 50ms ease;
+}
+
+.menu-line{
+    display: block;
+    background-color: #51565C;
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.menu-line-first {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.menu-line-second{
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.menu-button-active {
+    opacity: 100%;
+}
+
+.menu-section-catalog {
+    margin: 15vh 15px;
+}
+
+.title {
+    font-family: Raleway;
+    font-size: 40px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+}
+
+.span-menu-catalog {
+    color: #006400;;
+}
+
+.list-menu li {
+    list-style: none;
+    width: 360px;
+    margin:20px 0px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.list-menu a {
+    font-family: Raleway;
+    font-weight: 400;
+    color: #000000;
+    font-size: 25px;    
+    text-decoration: none;
+}
+
+.list-menu a:hover {
+    color:#006400;
+    padding-left: 10px;
+    transition: padding-left 0.3s ease;
+    border-left: 5px solid #006400;
+}
+
+.list-nested {
+    display: none;
+    transition: all 0.2s ease;
+}
+
+.list-nested-active {
+    display: block;
+}
+
+
+/*  */
+/* CLASS PAGE */
+/*  */
+
+.page {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+
+/*  */
+/* HEADER*/
+/*  */
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 100px;
+    width: 100%;
+    background-color: rgba(192, 192, 192);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+}
+
+.header-section-button {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.header-section-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: #51565C;
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    padding: 0 10px;
+    transition: all 50ms ease;
+}
+
+.h-button-line{
+    display: block;
+    background-color: #FFFAFA;
+    width: 30px;
+    height: 5px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.h-button-line-first {
+    top: 10px;
+}
+
+.h-button-line-second{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.h-button-line-third {
+    bottom: 10px;
+}
+
+.header-button-active {
+    opacity: 0%;
+    pointer-events: none;
+}
+
+.logo-name{
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.logo {
+    height: 80px;
+    width: 200px;
+}
+
+
+/*  */
+/* MAIN */
+/*  */
+
+
+main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    flex-grow: 1;
+    font-family: Raleway;
+    width: 100%;
+    max-width: 1350px;
+    margin: 30px auto;
+    padding: 10px 20px;
+    line-height: 1.5;
+}
+/* .main-center {
+    display: block;
+    justify-content: center;
+} */
+
+main h1 {
+    margin: 10px 0;
+}
+main h2 {
+    margin: 5px 10px;
+}
+
+main h3 {
+    margin: 5px 15px;
+}
+
+main p {
+    margin: 5px 20px;
+}
+
+img {
+    margin: 0 20px;
+}
+iframe {
+    margin: 5px 0;
+}
+
+table {
+    border: #000000 2px solid;
+    border-collapse: collapse;
+}
+
+td {
+    border: #000000 2px solid;
+    margin: 0px 10px;
+}
+
+.kontur-purchases {
+    text-decoration: none;
+    color:#1e79be;
+    font-weight: bold;
+}
+
+.kontur-eltradingschool {
+    text-decoration: none;
+    color:#d94440;
+    font-weight: bold;
+}
+
+.kontur-focus {
+    text-decoration: none;
+    color:#4d9068;
+    font-weight: bold;
+}
+
+.kontur-extern {
+    text-decoration: none;
+    color: #fc7630;
+    font-weight: bold;
+}
+
+.table-without-decoration {
+    border: none;
+    margin: 0 10px;
+}
+
+.td-without-decoration {
+    border: none;
+}
+
+iframe {
+    margin: 0 20px;
+}
+
+.list-subitem {
+    font-size: 16px;
+    padding: 5px;
+    list-style-type: none;
+    counter-reset:  item;
+}
+
+.subitem:before {
+    counter-increment: item;
+    content: counter(item) ') ';
+}
+
+
+/*  */
+/* FOOTER */
+/*  */
+
+
+footer {
+    display: flex;
+    height: 70px;
+    width: 100%;
+    background-color: #51565C;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-p {
+    font-family: Raleway;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.footer-link {
+    font-family: Raleway;
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
