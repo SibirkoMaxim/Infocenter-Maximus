@@ -15,6 +15,7 @@ body {
     margin:0;
     color: #111;
     background-color: #eeeeee;
+    /* background: linear-gradient(70deg, #ffffff, rgb(226, 226, 226)); */
 }
 
 
@@ -25,12 +26,13 @@ body {
 
 .menu {
     box-sizing: border-box;
+    z-index: 1;
     position: fixed;
-    background: rgb(192, 192, 192, 0.6);
+    background: rgba(155, 155, 155, 0.6);
     height: 100vh;
     backdrop-filter: blur(10px);
     left: -430px;
-    transition: all 0.1s ease;
+    transition: all 0.7s ease;
 }
 
 .menu-active {
@@ -40,7 +42,7 @@ body {
 .menu-section-button {
     display: flex;
     align-items: center;
-    height: 100px;
+    height: 65px;
     margin-left: 355px;
 }
 .menu-button {
@@ -52,8 +54,7 @@ body {
     cursor: pointer;
     position: relative;
     padding: 0 10px;
-    opacity: 0%;
-    transition: all 50ms ease;
+    transition: all 400ms ease;
 }
 
 .menu-line{
@@ -89,6 +90,10 @@ body {
     font-size: 40px;
     margin-bottom: 50px;
     margin-left: 15px;
+}
+
+.active-link {
+    font-weight: bold;
 }
 
 .span-menu-catalog {
@@ -134,6 +139,7 @@ body {
 
 .page {
     display: flex;
+    z-index: 0;
     flex-direction: column;
     overflow: hidden;
     min-height: 100vh;
@@ -146,11 +152,12 @@ body {
 
 
 header {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-    height: 100px;
+    height: 65px;
     width: 100%;
     background-color: rgba(192, 192, 192);
     box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
@@ -158,13 +165,9 @@ header {
 
 .header-section-button {
     display: flex;
+    position: static;
     align-items: center;
     padding: 0 15px;
-}
-
-.header-section-logo {
-    display: flex;
-    align-items: center;
 }
 
 .header-button {
@@ -176,11 +179,11 @@ header {
     cursor: pointer;
     position: relative;
     padding: 0 10px;
-    transition: all 50ms ease;
+    transition: all 400ms ease;
 }
 
-.h-button-line{
-    display: block;
+.h-button-line {
+    display:block;
     background-color: #FFFAFA;
     width: 30px;
     height: 5px;
@@ -193,7 +196,7 @@ header {
     top: 10px;
 }
 
-.h-button-line-second{
+.h-button-line-second {
     top: 50%;
     transform: translateY(-50%);
 }
@@ -203,20 +206,24 @@ header {
 }
 
 .header-button-active {
-    opacity: 0%;
     pointer-events: none;
+}
+
+.header-section-logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo-name{
     font-family: Raleway;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     padding: 0 10px;
 }
 
 .logo {
-    height: 80px;
-    width: 200px;
+    height: 50px;
+    width: 150px;
 }
 
 
@@ -235,6 +242,7 @@ main {
     margin: 30px auto;
     padding: 10px 20px;
     line-height: 1.5;
+    margin-top: 100px;
 }
 /* .main-center {
     display: block;
@@ -257,7 +265,7 @@ main p {
 }
 
 img {
-    margin: 0 20px;
+    margin: 0 10px;
 }
 iframe {
     margin: 5px 0;
@@ -330,7 +338,7 @@ iframe {
 
 footer {
     display: flex;
-    height: 70px;
+    height: 65px;
     width: 100%;
     background-color: #51565C;
     justify-content: center;
@@ -352,5 +360,11 @@ footer {
     text-decoration: none;
 }
 
+@media (max-height: 768px) {
+    .menu-section-catalog {
+        margin: 1vh 15px;
+    }
+}
 
+/*ggggg */
 
