@@ -360,11 +360,19 @@ footer {
     text-decoration: none;
 }
 
+
+/* MEDIA QUERIES */
+
 @media (max-height: 768px) {
     .menu-section-catalog {
         margin: 1vh 15px;
     }
 }
 
-/*ggggg */
+@media (max-width: 450) {
+    .header-section-button {
+        padding: 0px;
+    }
+}
+
 
