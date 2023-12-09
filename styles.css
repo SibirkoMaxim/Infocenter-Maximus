@@ -152,7 +152,7 @@ body {
 
 
 header {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,7 +167,7 @@ header {
     display: flex;
     position: static;
     align-items: center;
-    padding: 0 15px;
+    margin: 0 15px;
 }
 
 .header-button {
@@ -363,16 +363,27 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-height: 768px) {
+/* @media (max-height: 768px) {
     .menu-section-catalog {
         margin: 1vh 15px;
     }
-}
+} */
 
-@media (max-width: 450) {
+@media (width < 450px) {
     .header-section-button {
-        padding: 0px;
+        margin: 0px;
+    }
+    img { 
+        margin: 0px;
     }
 }
+
+@media (height < 768px) {
+    .menu-section-catalog {
+        margin: 1vh 15px;
+    } 
+}
+
+
 
 
