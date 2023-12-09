@@ -242,7 +242,7 @@ main {
     margin: 30px auto;
     padding: 10px 20px;
     line-height: 1.5;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 /* .main-center {
     display: block;
@@ -375,6 +375,9 @@ footer {
     }
     img { 
         margin: 0px;
+    }
+    main {
+        margin-top: 25px;
     }
 }
 
