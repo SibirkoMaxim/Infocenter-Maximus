@@ -242,7 +242,7 @@ main {
     margin: 30px auto;
     padding: 10px 20px;
     line-height: 1.5;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 /* .main-center {
     display: block;
@@ -376,9 +376,9 @@ footer {
     img { 
         margin: 0px;
     }
-    main {
+    /* main {
         margin-top: 25px;
-    }
+    } */
     .logo-name {
         display: none;
     }
