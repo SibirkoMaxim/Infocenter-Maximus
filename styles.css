@@ -156,7 +156,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
     height: 65px;
     width: 100%;
     background-color: rgba(192, 192, 192);
@@ -167,7 +166,7 @@ header {
     display: flex;
     position: static;
     align-items: center;
-    margin: 0 15px;
+    margin: 0 25px;
 }
 
 .header-button {
@@ -316,7 +315,10 @@ td {
 
 iframe {
     margin: 0 20px;
+    margin-top: 10px;
 }
+
+
 
 .list-subitem {
     font-size: 16px;
@@ -371,7 +373,10 @@ footer {
 
 @media (width < 450px) {
     .header-section-button {
-        margin: 0px;
+        margin: 20px;
+    }
+    .menu-section-button {
+        margin-left: 345px;
     }
     img { 
         margin: 0px;
