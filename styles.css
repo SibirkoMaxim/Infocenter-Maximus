@@ -158,7 +158,9 @@ header {
     align-items: center;
     height: 65px;
     width: 100%;
-    background-color: rgba(192, 192, 192);
+    /* background-color: rgb(249, 249, 249); */
+    background-color: rgb(180, 206, 180);
+    /* background-color: rgba(192, 192, 192); */
     box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
 }
 
@@ -318,6 +320,10 @@ iframe {
     margin-top: 10px;
 }
 
+map {
+    width: 100px;
+    height: 100px;
+}
 
 
 .list-subitem {
@@ -387,6 +393,16 @@ footer {
     .logo-name {
         display: none;
     }
+
+    iframe {
+        width: 340px;
+        height: 190px;
+    }
+
+    img {
+        width: 350px;
+        height: 300px;
+    }
 }
 
 @media (height < 768px) {
@@ -395,6 +411,6 @@ footer {
     } 
 }
 
-
+/* width=524&amp;height=283&amp; */
 
 
